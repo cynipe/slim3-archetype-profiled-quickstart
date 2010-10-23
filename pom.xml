@@ -5,6 +5,9 @@
   <artifactId>slim3-archetype-quickstart</artifactId>
   <version>1.0.5.2</version>
   <name>Archetype - slim3-archetype-quickstart</name>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <build>
     <extensions>
       <extension>
