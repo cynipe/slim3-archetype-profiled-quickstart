@@ -3,7 +3,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>${groupId}</groupId>
-  <artifactId>${artifactId}</artifactId>
+  <artifactId>${project.artifactId}</artifactId>
   <packaging>war</packaging>
   <version>${version}</version>
   <properties>
@@ -307,7 +307,7 @@
               <content>
                 <![CDATA[
 <factorypath>
-  <factorypathentry kind="WKSPJAR" id="/${dollar}${lcurly}artifactId}/${dollar}${lcurly}eclipse.lib}/slim3-gen-${dollar}${lcurly}slim3.version}.jar" enabled="true" runInBatchMode="false"/>
+  <factorypathentry kind="WKSPJAR" id="/${dollar}${lcurly}project.artifactId}/${dollar}${lcurly}eclipse.lib}/slim3-gen-${dollar}${lcurly}slim3.version}.jar" enabled="true" runInBatchMode="false"/>
 </factorypath>
                ]]>
               </content>
