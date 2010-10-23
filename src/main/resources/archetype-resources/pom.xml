@@ -12,6 +12,8 @@
     <generated.src>.apt_generated</generated.src>
     <generated.war>war</generated.war>
     <eclipse.lib>eclipse.lib</eclipse.lib>
+    <appId>${project.artifactId}</appId>
+    <appVersion>${project.version}</appVersion>
   </properties>
   <repositories>
     <repository>
@@ -146,6 +148,28 @@
       </plugins>
     </pluginManagement>
     <plugins>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>filter-webapp-resources</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>war</outputDirectory>
+              <overwrite>true</overwrite>
+              <resources>
+                <resource>
+                  <directory>src/main/webapp-resources</directory>
+                  <filtering>true</filtering>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
