@@ -274,8 +274,8 @@
             <buildcommand>com.google.appengine.eclipse.core.projectValidator</buildcommand>
           </additionalBuildcommands>
           <classpathContainers>
-            <classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
-            <classpathContainer>com.google.appengine.eclipse.core.GAE_CONTAINER</classpathContainer>
+            <classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6</classpathContainer>
+            <classpathContainer>com.google.appengine.eclipse.core.GAE_CONTAINER/appengine-java-sdk-${dollar}${lcurly}appengine.version}</classpathContainer>
           </classpathContainers>
           <additionalConfig>
             <file>
