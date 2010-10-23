@@ -2,9 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   <packaging>maven-archetype</packaging>
   <groupId>org.slim3</groupId>
-  <artifactId>slim3-archetype-quickstart</artifactId>
+  <artifactId>slim3-archetype-profiled-quickstart</artifactId>
   <version>1.0.5.2</version>
-  <name>Archetype - slim3-archetype-quickstart</name>
+  <name>Archetype - slim3-archetype-profiled-quickstart</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
