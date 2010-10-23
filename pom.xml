@@ -32,5 +32,12 @@
       <url>http://friendfeed.com/shin1ogawa/</url>
       <timezone>+9</timezone>
     </developer>
+    <developer>
+      <id>cynipe</id>
+      <name>cynipe</name>
+      <email>cynipe at gmail.com</email>
+      <url>http://twitter.com/cynipe/</url>
+      <timezone>+9</timezone>
+    </developer>
   </developers>
 </project>
