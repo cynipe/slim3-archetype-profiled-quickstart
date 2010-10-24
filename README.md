@@ -7,6 +7,8 @@ Hudsonと連携して使うのに便利。
 Installation
 ------------    
 
+ソースから利用する場合のみ
+
     $ git clone git://github.com/cynipe/slim3-archetype-profiled-quickstart.git
     $ cd slim3-archetype-profiled-quickstart
     $ mvn install
@@ -16,6 +18,12 @@ Usage
 
 ### プロジェクトの生成 ###
 
+公開リポジトリからの利用:
+
+    $ mvn archetype:generate -DarchetypeCatalog=http://github.com/cynipe/maven/raw/master/releases
+    
+ソースからインストールした場合:
+ 
     $ mvn archetype:generate -DarchetypeGroupId=org.slim3 -DarchetypeArtifactId=slim3-archetype-profiled-quickstart -DarchetypeVersion=1.0.5.2
 
 ### プロファイルの設定 ###
