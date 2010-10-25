@@ -59,3 +59,12 @@ eclipse設定ファイルが生成済みな場合は次のコマンドでもOK�
     $ mvn process-resources -Pdeveloper1
 
 web.xmlも生成対象としてあるので、もう少し改造すればktrwjrの有効/無効も設定可能ではある。
+
+### Eclipse上のAppEngineSDKの設定
+AppEngineSDKのバージョンを.classpathに明示指定するようにしているので以下の設定が必要。
+
+   + Preference > Google > AppEngineでAdd
+   + 対象とするAppEngineSDKのディレクトリを指定
+   + DisplayNameをappengine-java-sdk-${appengine.version}形式に指定して追加
+
+この設定が面倒な場合は生成されたpom.xml内300行目付近にあるclassPathContainerタグのGAE_CONTAINERの/以降を削除すればDefaultのAppEngineSDKが使用されるようになる。
